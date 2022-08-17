@@ -1,0 +1,10 @@
+applications:
+  - name: teamportfolio
+    path: ./target/teamportfolio.war
+    instances: 1
+    buildpacks:
+      - sap_java_buildpack
+    host: myteamportfolio
+    services:
+      - TeamPortfolio
+      - TeamPortfolioLogs
